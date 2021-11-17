@@ -1,127 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Fabiane's Cheat Sheet</title>
-        <link rel="stylesheet" href="styles.css" type="text/css">
-    </head>
-    <body>
-        <h1>CSS Selectors Reference</h1>
+  <head>
+    <title>Fabiane's Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <h1>CSS Selectors Reference</h1>
+    <div class="container">
+      <div id="selector-types">
+        <h2>Selector types</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>TYPE</th>
-                    <th>DESCRIPTION</th>
-                    <th>HTML USE</th>
-                    <th>CSS USE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <strong>Element</strong>
-                    </td>
-                    <td>HTML tag name</td>
-                    <td>
-                        <code>&lt;p&gt;</code>
-                    </td>
-                    <td>
-                        <code>
-                            p {<br><br>}
-                        </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Class</strong>
-                    </td>
-                    <td>Element's class name</td>
-                    <td>
-                        <code>&lt;p class="product-description"&gt;</code>
-                    </td>
-                    <td>
-                        <code>
-                            .product-description {<br><br>}
-                        </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Id</strong>
-                    </td>
-                    <td>Element's id</td>
-                    <td>
-                        <code>&lt;p id="product-description"&gt;</code>
-                    </td>
-                    <td>
-                        <code>
-                            #product-description {<br><br>}
-                        </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Attribute</strong>
-                    </td>
-                    <td>Element attribute</td>
-                    <td>
-                        <code>&lt;a href="example.jpeg"&gt;</code>
-                    </td>
-                    <td>
-                        <code>
-                            [href] {<br><br>}
-                        </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Pseudo-elements</strong>
-                    </td>
-                    <td>Actioning elements</td>
-                    <td>
-                        <code>&lt;button&gt;</code>
-                    </td>
-                    <td>
-                        <code>
-                            button:hover {<br><br>}
-                        </code>
-                    </td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>TYPE</th>
+              <th>DESCRIPTION</th>
+              <th>HTML USE</th>
+              <th>CSS USE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Element</strong>
+              </td>
+              <td>HTML tag name</td>
+              <td>
+                <code>&lt;p&gt;</code>
+              </td>
+              <td>
+                <code> p {<br /><br />} </code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Class</strong>
+              </td>
+              <td>Element's class name</td>
+              <td>
+                <code>&lt;p class="product-description"&gt;</code>
+              </td>
+              <td>
+                <code> .product-description {<br /><br />} </code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Id</strong>
+              </td>
+              <td>Element's id</td>
+              <td>
+                <code>&lt;p id="product-description"&gt;</code>
+              </td>
+              <td>
+                <code> #product-description {<br /><br />} </code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Attribute</strong>
+              </td>
+              <td>Element attribute</td>
+              <td>
+                <code>&lt;a href="example.jpeg"&gt;</code>
+              </td>
+              <td>
+                <code> [href] {<br /><br />} </code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Pseudo-elements</strong>
+              </td>
+              <td>Actioning elements</td>
+              <td>
+                <code>&lt;button&gt;</code>
+              </td>
+              <td>
+                <code> button:hover {<br /><br />} </code>
+              </td>
+            </tr>
+          </tbody>
         </table>
+      </div>
 
-        <div id="specificity">
-            <h2>SPECIFICITY</h2>
-            <ol>
-                <li>Types</li>
-                <li>Classes</li>
-                <li>Ids</li>
-            </ol>
-        </div>
-
-        <div id="chaining">
-            <h2>CHAINING</h2>
-            <code>
-                &lt;h1 class="special"&gt;
-            </code>
-            <br><br>
-            <code>
-                h1.special{<br><br>}
-            </code>
-        </div>
-
-        <div id="descendant-combinator">
-            <h2>DESCENDANT COMBINATOR</h2>
-            <code>
-                &lt;ul class='main-list'&gt;<br>
-                &nbsp;&nbsp;&lt;li&gt; ... &lt;/li&gt;<br>
-                &nbsp;&nbsp;&lt;li&gt; ... &lt;/li&gt;<br>
-                &nbsp;&nbsp;&lt;li&gt; ... &lt;/li&gt;<br>
-                &lt;/ul&gt;
-            </code>
-            <br><br>
-            <code>
-                .main-list li {<br><br>}
-            </code>
-        </div>
-    </body>
+      <div id="css-tips">
+        <h2>CSS Tips</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ITEM</th>
+              <th>BEHAVIOR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Specificity</strong>
+              </td>
+              <td>
+                <nav>
+                  <ol>
+                    <li>Types</li>
+                    <li>Classes</li>
+                    <li>Ids</li>
+                  </ol>
+                </nav>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Chaining</strong>
+              </td>
+              <td>
+                <code> &lt;h1 class="special"&gt; </code>
+                <br /><br />
+                <code> h1.special{<br /><br />} </code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Descendant Combinator</strong>
+              </td>
+              <td>
+                <code>
+                  &lt;ul class='main-list'&gt;<br />
+                  &nbsp;&nbsp;&lt;li&gt; ... &lt;/li&gt;<br />
+                  &nbsp;&nbsp;&lt;li&gt; ... &lt;/li&gt;<br />
+                  &nbsp;&nbsp;&lt;li&gt; ... &lt;/li&gt;<br />
+                  &lt;/ul&gt;
+                </code>
+                <br /><br />
+                <code> .main-list li {<br /><br />} </code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
